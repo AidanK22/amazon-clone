@@ -58,8 +58,15 @@
 
 .header__optionBasket {
   display: flex;
-  align-items: center;
+
   color: white;
+}
+
+.header__checkoutLink {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
 }
 
 .header__basketCount {

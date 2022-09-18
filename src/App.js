@@ -1,18 +1,23 @@
 import React from "react";
 import './App.css';
-import Header from "./components/Header";
-import Home from './components/Home';
+
+import CheckoutPage from "./pages/CheckoutPage";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
     // BEM
-    <div className="App">
-      
-      <Header/>
-      <Home/>
-      {/* Header */}
-      {/* Home */}
-    </div>
+    
+      <div className="App">
+        <Routes>
+          <Route path="/checkout" element={<CheckoutPage/>} exact/>
+          <Route path="/" element={<HomePage/>} />
+        </Routes>
+      </div>
+    
   );
 }
 
